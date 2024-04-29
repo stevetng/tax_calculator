@@ -31,9 +31,12 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header />
-      <main>
+      <main className='bg-gray-200 h-screen w-full'>
+        <div className='flex flex-col md:flex-row max-w-6xl mx-auto w-full h-full border-black border'>
         <UserInfoForm onSubmit={handleUserInfoSubmit} />
-        <CandidateComparison userInfo={userInfo} />
+          <CandidateComparison userInfo={userInfo} />
+        </div>
+          
       </main>
       <Footer />
     </div>
